@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/a4eba448c7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid px-0 min-vh-100 ">
+        <!--Header-->
+        <div class="row g-0">
+            <header class="col-12 d-flex justify-content-between align-items-center py-2 px-4 border-bottom">
+                <div class="d-flex justify-content-center align-items-center gap-3 ">
+                    <div class="d-md-none d-flex">
+                        <i class="fa-solid fa-circle-right color-primary"></i>
+                    </div>
+
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <div>
+                            <img src="/assets/images/color-wheel.png" width="40" height="40" />
+                        </div>
+
+                        <div class="d-flex flex-column gap-0">
+
+                            <div>
+                                <p class="mb-0 color-primary fw-bold">SDG</p>
+                            </div>
+                            <div>
+                                <p class="mb-0 color-primary fw-bold color-primary">JAMMU & KASHMIR</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="d-md-flex d-none">
+                        <i class="fa-solid fa-circle-arrow-left color-primary fs-5"></i>
+                    </div>
+
+                </div>
+
+                <div class="d-md-flex gap-2 d-none">
+                    <div>
+                        <p class="mb-0">Administrator</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+                <div class="d-md-none  d-flex">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <aside class="col-md-3 col-lg-2 d-none d-md-block  p-2 " style="height: calc(100vh - 64.77px);">
+                <div>
+                    <div class="d-flex justify-content-start gap-3 px-4  py-2 rounded">
+                        <div><i class="fa-solid fa-chart-simple color-secondary"></i></div>
+                        <div><a class=" text-decoration-none color-secondary">Dashboard</a></div>
+                    </div>
+                    <div class="d-flex justify-content-start gap-3 px-4 shadow-bottom-sidebar py-2 rounded bg-main">
+                        <div><i class="fa-regular fa-file-invoice color-main"></i></div>
+                        <div><a class="color-main text-decoration-none">Indicators</a></div>
+                    </div>
+                    <div class="d-flex justify-content-start gap-3 px-4  py-2 rounded ">
+                        <div><i class="fa-solid fa-file-arrow-up color-secondary"></i></i>
+                        </div>
+                        <div><a class="text-decoration-none color-secondary">Import Raw Data </a></div>
+                    </div>
+                    <div class="d-flex justify-content-start gap-2 px-4  py-2 rounded ">
+                        <div><i class="fa-solid fa-file-arrow-down color-secondary"></i></div>
+                        <div><a class="text-decoration-none color-secondary">Export Report</a></div>
+                    </div>
+                    <div class="d-flex justify-content-start gap-2 px-4   py-2 rounded ">
+                        <div class="d-flex justify-content-start align-items-center gap-2">
+                            <div><i class="fa-solid fa-users color-secondary"></i></div>
+                            <div><a class="text-decoration-none color-secondary">User And Area Management</a></div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center color-secondary">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start px-4  gap-3  py-2 rounded ">
+                        <div class="d-flex justify-content-start align-items-center gap-2">
+                            <div><i class="fa-solid fa-gear color-secondary"></i></div>
+                            <div><a class="text-decoration-none color-secondary ">Master Management</a></div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center color-secondary">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- Content -->
+            <div class="col-12 col-md-9 col-lg-10 p-0">
+                <div class="row g-0 bg-light p-4" style="height: calc(100vh - 104.77px);">
+                    <main class="col-12 bg-white rounded-3 h-100 p-3 overflow-auto">
+                        <div>
+                            <div>
+                                <p class="mb-3  fw-semibold fs-5">Indicator Framework</p>
+                            </div>
+
+                            <form id="indicatorForm">
+
+
+                                <div class="row g-3 ">
+
+                                    <div class="col-12">
+                                        <label class="form-label">Select Indicator Type <span
+                                                class="color-red">*</span></label>
+                                        <div class="d-flex gap-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input radio-color" type="radio" name="indicatorType" id="utif" value="UTIF" checked>
+                                                <label class="form-check-label " for="utif">UTIF</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input radio-color" type="radio" name="indicatorType" id="dif" value="DIF">
+                                                <label class="form-check-label" for="dif">DIF</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="indicatorId" class="form-label">Indicator Id / Number <span
+                                                class="color-red">*</span></label>
+                                        <input type="text" class="form-control" id="indicatorId" placeholder="Enter Indicator Id">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="indicatorName" class="form-label">Indicator Name <span
+                                                class="color-red">*</span></label>
+                                        <input type="text" class="form-control" id="indicatorName" placeholder="Enter Indicator Name">
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <label for="goals" class="form-label">Goals <span
+                                                class="color-red">*</span></label>
+                                        <select class="form-select" id="goals">
+                                            <option selected>-- Select Goal --</option>
+                                            <option value="1">Goal 1</option>
+                                            <option value="2">Goal 2</option>
+                                            <option value="3">Goal 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="targetNumber" class="form-label">Target Number <span
+                                                class="color-red">*</span></label>
+                                        <select class="form-select" id="targetNumber">
+                                            <option selected>-- Select Target --</option>
+                                            <option value="1">Target 1</option>
+                                            <option value="2">Target 2</option>
+                                            <option value="3">Target 3</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-12 assign-dep">
+                                        <label for="assignDepartment" class="form-label">Assign Department <span
+                                                class="color-red">*</span></label>
+                                        <select class="form-select" id="assignDepartment">
+                                            <option selected>-- Select Departments --</option>
+                                            <option value="hr">Dep 1</option>
+                                            <option value="finance">Dep 2</option>
+                                            <option value="it">Dep 3 </option>
+                                            <option value="operations">Dep 4</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <label for="unit" class="form-label">Unit <span
+                                                class="color-red">*</span></label>
+                                        <select class="form-select" id="unit">
+                                            <option selected>-- Select Unit --</option>
+                                            <option value="percentage">Unit 1</option>
+                                            <option value="number">Unit 2</option>
+                                            <option value="currency">Unit 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="valueType" class="form-label">Value Type</label>
+                                        <select class="form-select" id="valueType">
+                                            <option selected>-- Select Value Type --</option>
+                                            <option value="absolute">Value 1</option>
+                                            <option value="relative">Value 2</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <label for="baselineYear" class="form-label">Baseline Year <span
+                                                class="color-red">*</span></label>
+                                        <select class="form-select" id="baselineYear">
+                                            <option selected>-- Select Year --</option>
+                                            <option value="2020">2022</option>
+                                            <option value="2021">2023</option>
+                                            <option value="2022">2024</option>
+                                            <option value="2023">2025</option>
+                                            <option value="2024">2026</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="baselineValue" class="form-label">Baseline Value <span
+                                                class="color-red">*</span></label>
+                                        <input type="text" class="form-control" id="baselineValue" placeholder="Enter the Baseline Value">
+                                    </div>
+
+                                    <div class="col-12 d-flex flex-column">
+                                        <label for="target2030" class="form-label mb-0">Target 2030 <span
+                                                class="color-red">*</span></label>
+                                        <div class="light-text mb-2">The designated target would remain consistent across all years.
+                                        </div>
+                                        <input type="text" class="form-control" id="target2030" placeholder="Please enter the Target">
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <label for="tags" class="form-label">Tags <span
+                                                class="color-red">*</span></label>
+                                        <input type="text" class="form-control" id="tags" placeholder="Please enter Tags">
+                                    </div>
+
+
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="button" class="btn-cancel">Cancel</button>
+                                        <button type="submit" class="btn-save">Save</button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </main>
+                </div>
+                <div class="row g-0">
+                    <footer class="col-12 p-0 bg-main color-main px-4 py-2">
+                        <p class="mb-0"> Copyrights © 2024 All Rights Reserved</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
