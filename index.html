@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="https://kit.fontawesome.com/a4eba448c7.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/script.js"></script>
 
@@ -17,7 +18,8 @@
     <div class="container-fluid px-0 min-vh-100 ">
         <!--Header-->
         <div class="row g-0">
-            <header class="col-12 d-flex justify-content-between align-items-center py-2 px-4 border-bottom">
+            <header
+                class="col-12 d-flex justify-content-between align-items-center py-2 px-4 border-bottom fixed-header ">
                 <div class="d-flex justify-content-center align-items-center gap-3 ">
                     <div class="d-md-none d-flex">
                         <i class="fa-solid fa-circle-right color-primary"></i>
@@ -64,54 +66,54 @@
         </div>
 
 
-        <div class="row g-0">
+        <div class=" g-0 d-flex">
             <!-- Sidebar -->
-            <aside class="col-md-3 col-lg-2 d-none d-md-block  p-2 " style="height: calc(100vh - 64.77px);">
+            <aside class="sidebar d-none d-md-block p-2">
                 <div>
-                    <div class="d-flex justify-content-start gap-3 px-4  py-2 rounded">
-                        <div><i class="fa-solid fa-chart-simple color-secondary"></i></div>
-                        <div><a class=" text-decoration-none color-secondary">Dashboard</a></div>
-                    </div>
-                    <div class="d-flex justify-content-start gap-3 px-4 shadow-bottom-sidebar py-2 rounded bg-main">
-                        <div><i class="fa-regular fa-file-invoice color-main"></i></div>
-                        <div><a class="color-main text-decoration-none">Indicators</a></div>
-                    </div>
-                    <div class="d-flex justify-content-start gap-3 px-4  py-2 rounded ">
-                        <div><i class="fa-solid fa-file-arrow-up color-secondary"></i></i>
+                    <a href="#"
+                        class="d-flex justify-content-start gap-3 px-4 py-2 rounded text-decoration-none color-secondary">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#"
+                        class="d-flex justify-content-start gap-3 px-4 py-2 rounded bg-main text-decoration-none color-main shadow-bottom-sidebar">
+                        <i class="fa-regular fa-file-invoice"></i>
+                        <span>Indicators</span>
+                    </a>
+                    <a href="#"
+                        class="d-flex justify-content-start gap-3 px-4 py-2 rounded text-decoration-none color-secondary">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <span>Import Raw Data</span>
+                    </a>
+                    <a href="#"
+                        class="d-flex justify-content-start gap-3 px-4 py-2 rounded text-decoration-none color-secondary">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span>Export Report</span>
+                    </a>
+                    <a href="#"
+                        class="d-flex justify-content-between align-items-center px-4 py-2 rounded text-decoration-none color-secondary">
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="fa-solid fa-users"></i>
+                            <span>User And Area Management</span>
                         </div>
-                        <div><a class="text-decoration-none color-secondary">Import Raw Data </a></div>
-                    </div>
-                    <div class="d-flex justify-content-start gap-2 px-4  py-2 rounded ">
-                        <div><i class="fa-solid fa-file-arrow-down color-secondary"></i></div>
-                        <div><a class="text-decoration-none color-secondary">Export Report</a></div>
-                    </div>
-                    <div class="d-flex justify-content-start gap-2 px-4   py-2 rounded ">
-                        <div class="d-flex justify-content-start align-items-center gap-2">
-                            <div><i class="fa-solid fa-users color-secondary"></i></div>
-                            <div><a class="text-decoration-none color-secondary">User And Area Management</a></div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <a href="#"
+                        class="d-flex justify-content-between align-items-center px-4 py-2 rounded text-decoration-none color-secondary">
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Master Management</span>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center color-secondary">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-start px-4  gap-3  py-2 rounded ">
-                        <div class="d-flex justify-content-start align-items-center gap-2">
-                            <div><i class="fa-solid fa-gear color-secondary"></i></div>
-                            <div><a class="text-decoration-none color-secondary ">Master Management</a></div>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center color-secondary">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </div>
-
-                    </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
                 </div>
 
             </aside>
 
             <!-- Content -->
-            <div class="col-12 col-md-9 col-lg-10 p-0">
-                <div class="row g-0 bg-light p-4" style="height: calc(100vh - 104.77px);">
-                    <main class="col-12 bg-white rounded-3 h-100 p-3 overflow-auto">
+            <div class="flex-grow-1 p-0 content-area">
+                <div class="row g-0 bg-light p-4">
+                    <main class="col-12 bg-white rounded-3 h-100 p-3">
                         <div>
                             <div>
                                 <p class="mb-3  fw-semibold fs-5">Indicator Framework</p>
@@ -127,11 +129,13 @@
                                                 class="color-red">*</span></label>
                                         <div class="d-flex gap-3">
                                             <div class="form-check">
-                                                <input class="form-check-input radio-color" type="radio" name="indicatorType" id="utif" value="UTIF" checked>
+                                                <input class="form-check-input radio-color" type="radio"
+                                                    name="indicatorType" id="utif" value="UTIF" checked>
                                                 <label class="form-check-label " for="utif">UTIF</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input radio-color" type="radio" name="indicatorType" id="dif" value="DIF">
+                                                <input class="form-check-input radio-color" type="radio"
+                                                    name="indicatorType" id="dif" value="DIF">
                                                 <label class="form-check-label" for="dif">DIF</label>
                                             </div>
                                         </div>
@@ -140,12 +144,14 @@
                                     <div class="col-12 col-md-6">
                                         <label for="indicatorId" class="form-label">Indicator Id / Number <span
                                                 class="color-red">*</span></label>
-                                        <input type="text" class="form-control" id="indicatorId" placeholder="Enter Indicator Id">
+                                        <input type="text" class="form-control" id="indicatorId"
+                                            placeholder="Enter Indicator Id">
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <label for="indicatorName" class="form-label">Indicator Name <span
                                                 class="color-red">*</span></label>
-                                        <input type="text" class="form-control" id="indicatorName" placeholder="Enter Indicator Name">
+                                        <input type="text" class="form-control" id="indicatorName"
+                                            placeholder="Enter Indicator Name">
                                     </div>
 
 
@@ -219,22 +225,26 @@
                                     <div class="col-md-6">
                                         <label for="baselineValue" class="form-label">Baseline Value <span
                                                 class="color-red">*</span></label>
-                                        <input type="text" class="form-control" id="baselineValue" placeholder="Enter the Baseline Value">
+                                        <input type="text" class="form-control" id="baselineValue"
+                                            placeholder="Enter the Baseline Value">
                                     </div>
 
                                     <div class="col-12 d-flex flex-column">
                                         <label for="target2030" class="form-label mb-0">Target 2030 <span
                                                 class="color-red">*</span></label>
-                                        <div class="light-text mb-2">The designated target would remain consistent across all years.
+                                        <div class="light-text mb-2">The designated target would remain consistent
+                                            across all years.
                                         </div>
-                                        <input type="text" class="form-control" id="target2030" placeholder="Please enter the Target">
+                                        <input type="text" class="form-control" id="target2030"
+                                            placeholder="Please enter the Target">
                                     </div>
 
 
                                     <div class="col-12">
                                         <label for="tags" class="form-label">Tags <span
                                                 class="color-red">*</span></label>
-                                        <input type="text" class="form-control" id="tags" placeholder="Please enter Tags">
+                                        <input type="text" class="form-control" id="tags"
+                                            placeholder="Please enter Tags">
                                     </div>
 
 
