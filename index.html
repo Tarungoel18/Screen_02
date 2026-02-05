@@ -21,8 +21,8 @@
             <header
                 class="col-12 d-flex justify-content-between align-items-center py-2 px-4 border-bottom fixed-header ">
                 <div class="d-flex justify-content-center align-items-center gap-3 ">
-                    <div class="d-md-none d-flex">
-                        <i class="fa-solid fa-circle-right color-primary"></i>
+                    <div class="cursor-pointer" id="sidebarOpen">
+                        <i class="fa-solid fa-circle-right color-primary fs-5"></i>
                     </div>
 
                     <div class="d-flex gap-2 justify-content-center align-items-center">
@@ -43,7 +43,7 @@
 
                     </div>
 
-                    <div class="d-md-flex d-none">
+                    <div class="cursor-pointer" id="sidebarClose">
                         <i class="fa-solid fa-circle-arrow-left color-primary fs-5"></i>
                     </div>
 
@@ -68,12 +68,12 @@
 
         <div class=" g-0 d-flex">
             <!-- Sidebar -->
-            <aside class="sidebar d-none d-md-block p-2">
+            <aside class="sidebar p-2">
                 <div>
                     <a href="#"
                         class="d-flex justify-content-start gap-3 px-4 py-2 rounded text-decoration-none color-secondary">
                         <i class="fa-solid fa-chart-simple"></i>
-                        <span>Dashboard</span>
+                        <span>Dashboard</span>      
                     </a>
                     <a href="#"
                         class="d-flex justify-content-start gap-3 px-4 py-2 rounded bg-main text-decoration-none color-main shadow-bottom-sidebar">
